@@ -63,7 +63,7 @@ start.addEventListener('click', ()=>{
                         cantimeoute = true;
 
                         //sound.volume = getValue(i)/100;
-                        sound.playbackRate = speed.value * 0.16;
+                        sound.playbackRate = speed.value < 100 ? speed.value * 0.16 : 1;
                         sound.currentTime = 0;
                         sound.play();
                         //div[i].style.backgroundColor = "#0004ff";
